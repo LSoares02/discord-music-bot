@@ -7,11 +7,10 @@ const { Player } = require("discord-player");
 
 dotenv.config();
 const TOKEN = process.env.TOKEN;
-
-const LOAD_SLASH = process.argv[2] == "load";
-
 const APP_ID = process.env.APP_ID;
 const GUILD_ID = process.env.GUILD_ID;
+
+const LOAD_SLASH = process.argv[2] == "load";
 
 const client = new Discord.Client({
   intents: ["GUILDS", "GUILD_VOICE_STATES"],
